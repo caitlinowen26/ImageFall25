@@ -51,6 +51,10 @@
       <a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" material="src: #grassTexture; repeat: 20 16;">
       </a-plane>
 
+      <!--river encircling the meadow-->
+      <a-ring position="0 0.01 0" rotation="-90 0 0" radius-inner="18" radius-outer="24" material="color: #4fa6ff; opacity: 0.9; roughness: 0.2; metalness: 0.1"></a-ring>
+
+
       <!--"hills"-->
       <a-sphere position="-40 3 -30" radius="12" scale="1.2 0.4 1.2" material="src: #bushTexture;"></a-sphere>
       <a-sphere position="35 4 25" radius="10" scale="1.3 0.4 1.3" material="src: #bushTexture;"></a-sphere>
@@ -73,6 +77,18 @@
       <a-sphere position="-25 1 0" radius="5" scale="1.3 0.4 1.3" material="src: #bushTexture; repeat: 3 2;"></a-sphere>
       <a-sphere position="0 1 25" radius="4.5" scale="1.2 0.4 1.2" material="src: #bushTexture; repeat: 3 2;"></a-sphere>
       <a-sphere position="0 1 -25" radius="4.5" scale="1.2 0.4 1.2" material="src: #bushTexture; repeat: 3 2;"></a-sphere>
+
+      <!--360° distant mountains (unreachable horizon ring)-->
+      <a-cone position="-80 15 -80" radius-bottom="35" radius-top="0.5" height="50" color="#353d52"></a-cone>
+      <a-cone position="-80 15 0" radius-bottom="30" radius-top="0.5" height="45" color="#3f475c"></a-cone>
+      <a-cone position="-80 15 80" radius-bottom="35" radius-top="0.5" height="50" color="#353d52"></a-cone>
+
+      <a-cone position="0 18 -90" radius-bottom="40" radius-top="0.5" height="55" color="#262d3f"></a-cone>
+      <a-cone position="0 18 90" radius-bottom="40" radius-top="0.5" height="55" color="#262d3f"></a-cone>
+
+      <a-cone position="80 15 -80" radius-bottom="35" radius-top="0.5" height="50" color="#2e3648"></a-cone>
+      <a-cone position="80 15 0" radius-bottom="30" radius-top="0.5" height="45" color="#3f475c"></a-cone>
+      <a-cone position="80 15 80" radius-bottom="35" radius-top="0.5" height="50" color="#2e3648"></a-cone>
 
 
       <!--butterflies using 3d modles-->
@@ -234,22 +250,22 @@
 
       <!--patch of flowers (real 3D tulips)-->
 
-<a-entity position="2.8 0 -4" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3800; dir: alternate; to: 0 8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="3.2 0 -4.3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4200; dir: alternate; to: 0 -10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="2.4 0 -4.2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4000; dir: alternate; to: 0 12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="2.8 0 -4" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3800; dir: alternate; to: 0 8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="3.2 0 -4.3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4200; dir: alternate; to: 0 -10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="2.4 0 -4.2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4000; dir: alternate; to: 0 12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
 
-<a-entity position="-2.6 0 4.2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3600; dir: alternate; to: 0 -8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="-3.1 0 4.5" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4200; dir: alternate; to: 0 15 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="-2.1 0 4.0" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4000; dir: alternate; to: 0 -12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-2.6 0 4.2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3600; dir: alternate; to: 0 -8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-3.1 0 4.5" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4200; dir: alternate; to: 0 15 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-2.1 0 4.0" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4000; dir: alternate; to: 0 -12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
 
-<a-entity position="5 0 -2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4300; dir: alternate; to: 0 5 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="6 0 3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3800; dir: alternate; to: 0 -10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="-5 0 -3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4100; dir: alternate; to: 0 10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="5 0 -2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4300; dir: alternate; to: 0 5 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="6 0 3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3800; dir: alternate; to: 0 -10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-5 0 -3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4100; dir: alternate; to: 0 10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
 
-<a-entity position="-6 0 -7" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3500; dir: alternate; to: 0 -8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="6 0 -6" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3700; dir: alternate; to: 0 8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="-7 0 2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4300; dir: alternate; to: 0 -12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
-<a-entity position="7 0 3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4100; dir: alternate; to: 0 10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-6 0 -7" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3500; dir: alternate; to: 0 -8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="6 0 -6" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 3700; dir: alternate; to: 0 8 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="-7 0 2" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4300; dir: alternate; to: 0 -12 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
+      <a-entity position="7 0 3" scale="0.03 0.03 0.03" animation__sway="property: rotation; dur: 4100; dir: alternate; to: 0 10 0; loop: true"><a-entity gltf-model="#tulipModel" rotation="-90 0 0"></a-entity></a-entity>
 
       
 
